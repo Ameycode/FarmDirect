@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#002201",
+                    "surface": "#fff9ee",
+                    "surface-container": "#f3ede2",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e8e2d7",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#3b6934",
+                    "primary-fixed-dim": "#a1d494",
+                    "surface-dim": "#dfd9ce",
+                    "inverse-primary": "#a1d494",
+                    "inverse-surface": "#333029",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#795900",
+                    "on-primary-container": "#9dd090",
+                    "primary-container": "#2d5a27",
+                    "tertiary-container": "#7c3a55",
+                    "on-surface": "#1d1b15",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eee7dc",
+                    "secondary-fixed": "#ffdf9f",
+                    "on-surface-variant": "#42493e",
+                    "on-primary-fixed-variant": "#23501e",
+                    "tertiary-fixed-dim": "#ffb0cc",
+                    "secondary-container": "#ffc329",
+                    "primary": "#154212",
+                    "outline-variant": "#c2c9bb",
+                    "on-tertiary-container": "#ffaac8",
+                    "on-secondary-container": "#6f5100",
+                    "on-tertiary-fixed-variant": "#71314c",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#f9bd22",
+                    "surface-bright": "#fff9ee",
+                    "on-secondary-fixed": "#261a00",
+                    "background": "#fff9ee",
+                    "inverse-on-surface": "#f6f0e5",
+                    "surface-variant": "#e8e2d7",
+                    "primary-fixed": "#bcf0ae",
+                    "surface-container-low": "#f9f3e8",
+                    "on-secondary-fixed-variant": "#5c4300",
+                    "tertiary": "#60233e",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#ffd9e4",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1d1b15",
+                    "outline": "#72796e",
+                    "on-tertiary-fixed": "#3b0520"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 40px rgba(29, 27, 21, 0.06);
+        }
+        .glass-nav {
+            background-color: rgba(255, 249, 238, 0.8);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-[#fff9ee] dark:bg-stone-950 flex justify-between items-center px-6 py-4 shadow-none">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#154212] dark:text-[#4ade80]" data-icon="location_on">location_on</span>
+<h1 class="font-['Plus_Jakarta_Sans'] font-black text-[#154212] dark:text-white text-xl tracking-tighter">The Homestead</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#154212] dark:text-[#4ade80] transition-colors" href="#">Home</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#42493e] dark:text-stone-400 hover:bg-[#e8e2d7]/50 transition-colors px-2 py-1 rounded-lg" href="#">Market</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#42493e] dark:text-stone-400 hover:bg-[#e8e2d7]/50 transition-colors px-2 py-1 rounded-lg" href="#">Farmers</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#42493e] dark:text-stone-400 hover:bg-[#e8e2d7]/50 transition-colors px-2 py-1 rounded-lg" href="#">Stories</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#154212] dark:text-[#4ade80] active:scale-95 duration-150 ease-in-out" data-icon="search">search</button>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-xl font-bold tracking-tight active:scale-95 transition-all">Get Started</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center px-6 md:px-24 py-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Farm Harvest" class="w-full h-full object-cover" data-alt="expansive golden wheat field at sunset with a rustic wooden crate overflowing with vibrant freshly harvested heirloom vegetables and greens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmxNqYTZvQ0b_MJ8qh4SRrrnEoAFfz_5cDlRNCFypZ7ZALF-6X9-w2ChpHOTi6D9V9lIeOwF95BF71GfGI9umye8WAy5MVEaREo0VpxcQ8GpDAV_WrPAco6I3-AfvME1qm-GzsjfxsBjMFRJSkX97dnuW8BIn0zG5Bdm5gjUagykwVHuYQRDTo0zWuikK9tVt17CbxOrHdOaxrWve-q24-1XTplXElHHsK74fBvWdqCJycNxB3ANWxUbd3OME01Kyae5oAUV37CXnP"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-2xl">
+<span class="bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 inline-block">Authentically Grown</span>
+<h2 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
+                    The Harvest, <br/><span class="text-primary italic font-medium">unfiltered.</span>
+</h2>
+<p class="text-lg md:text-xl text-on-surface-variant mb-10 leading-relaxed max-w-lg">
+                    Experience a more honest way to eat. We bridge the gap between rural landscapes and your kitchen table, bringing the soil's best directly to you.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-lg active:scale-95 transition-all">Shop the Harvest</button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold text-lg active:scale-95 transition-all">Meet Our Farmers</button>
+</div>
+</div>
+</section>
+<!-- Value Propositions -->
+<section class="py-24 px-6 md:px-24 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4 p-8 bg-surface-container-low rounded-2xl transition-all hover:bg-surface-container-high group">
+<div class="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="potted_plant">potted_plant</span>
+</div>
+<h3 class="text-2xl font-headline font-bold">Fresh from the Field</h3>
+<p class="text-on-surface-variant leading-relaxed">Produce picked at peak ripeness and delivered within hours, not days. Taste the vibrancy of life.</p>
+</div>
+<div class="flex flex-col gap-4 p-8 bg-surface-container-low rounded-2xl transition-all hover:bg-surface-container-high group">
+<div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="text-2xl font-headline font-bold">Direct to You</h3>
+<p class="text-on-surface-variant leading-relaxed">No middlemen, no long-haul shipping. Just a transparent journey from the farmgate to your doorstep.</p>
+</div>
+<div class="flex flex-col gap-4 p-8 bg-surface-container-low rounded-2xl transition-all hover:bg-surface-container-high group">
+<div class="w-16 h-16 bg-tertiary-container rounded-2xl flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl" data-icon="handshake">handshake</span>
+</div>
+<h3 class="text-2xl font-headline font-bold">Fair for Farmers</h3>
+<p class="text-on-surface-variant leading-relaxed">We ensure 90% of every dollar goes directly back to the land and the people who steward it.</p>
+</div>
+</div>
+</section>
+<!-- How it Works (Editorial Bento Grid) -->
+<section class="py-24 px-6 md:px-24 bg-surface-container-low rounded-[3rem]">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-extrabold mb-4">Cultivating Connection</h2>
+<p class="text-on-surface-variant text-lg">A simple process for a better food system.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-8 bg-surface rounded-3xl overflow-hidden relative group editorial-shadow">
+<img alt="Browse Products" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="overhead view of a rustic wooden kitchen table with digital tablet showing a marketplace app next to fresh apples and herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3yp-yKWIDN7Jo6MxVKjT3iLP6PvoL24LygKSENIDe5AJ1WtfF33cfThzbmGJ4Rsd4aetKOykHVxnmqhHS7HHCSkpAA7EH6tcgrjB_DaJhB4EhHYt99skVBSV_CKhzq9VQleM2wD5XiFslXXZNXberYfUO8ONWGkfa-7-k4vNmyVRiVDgeWf5_5w7T5EK1KsvdhMkFHPWDInHZ2jyLGikAc84W8Nt61hM7NSs1K2qjYvvsAF2nPLQgl1ekJETNxWBOY0IFEk4ZFQnj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-10">
+<h4 class="text-white text-3xl font-headline font-bold mb-2">1. Browse the Local Season</h4>
+<p class="text-white/80 max-w-md">Discover what's growing in your region right now. From heritage tomatoes to artisan honeys.</p>
+</div>
+</div>
+<div class="md:col-span-4 bg-primary text-on-primary rounded-3xl p-10 flex flex-col justify-center editorial-shadow">
+<span class="material-symbols-outlined text-5xl mb-6" data-icon="shopping_basket">shopping_basket</span>
+<h4 class="text-3xl font-headline font-bold mb-4">2. Fill Your Basket</h4>
+<p class="text-primary-fixed opacity-90 leading-relaxed">Customize your box or subscribe to a weekly farmer's choice bundle. No commitments, just great food.</p>
+</div>
+<div class="md:col-span-4 bg-secondary-container text-on-secondary-container rounded-3xl p-10 flex flex-col justify-center editorial-shadow">
+<span class="material-symbols-outlined text-5xl mb-6" data-icon="door_front">door_front</span>
+<h4 class="text-3xl font-headline font-bold mb-4">3. Fresh Arrival</h4>
+<p class="text-on-secondary-container/80 leading-relaxed">Our fleet of temperature-controlled local couriers delivers the morning's harvest to your door.</p>
+</div>
+<div class="md:col-span-8 bg-surface rounded-3xl overflow-hidden relative group editorial-shadow">
+<img alt="Happy Community" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="a family laughing together around a kitchen island while preparing a healthy salad with vibrant colorful fresh produce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW5saq6sQ0eG2S0MjPfSAW9j4YxIf2Y5JiPB0uR3noz0zL5FDkGIF21spmEwFDKMcTOk7PN8pl3rqMnJic7BNvUKgK7g2FvKW_2Le8ffRhTJh-bwfkcJIITCXyjDRTme6nm4FuwNZm3zL2xnHjOL1B2u54htZD9m-9IxALLWZyo0XCx0eI0UtcRIYWOrDSgJ4qYqo7pZ9qRpMk6ehWlVP6vMTnIsPu5ez3tbznCnifZs-Qjy8mxnKkfNB16iRhLQ_1tRMDy-vNql1J"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#154212]/80 to-transparent flex flex-col justify-end p-10">
+<h4 class="text-white text-3xl font-headline font-bold mb-2">4. Support the Soil</h4>
+<p class="text-white/80 max-w-md">Every bite helps fund regenerative agriculture and supports small-scale family farming traditions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Farmers -->
+<section class="py-24 px-6 md:px-24 bg-surface">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-4xl font-headline font-extrabold mb-4">Stewards of the Land</h2>
+<p class="text-on-surface-variant text-lg">Meet the experts behind your ingredients.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:underline">
+                    View all 140+ Farmers <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Farmer Card 1 -->
+<div class="bg-surface-container rounded-3xl overflow-hidden editorial-shadow group">
+<div class="h-72 relative">
+<img alt="The Miller Family" class="w-full h-full object-cover" data-alt="portrait of an elderly farmer couple smiling warmly in their organic vegetable garden with green leaves in the foreground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-KuWXWOA8ArY33ZrxNGenBZJvv-BT0mDjiRG8A34Rw9JHQytBvJzYAaL_JwRn9Pa_uj9xF5rN6R8b6dOZ_Z6lNi6djO3xHs1aZBQJ_kul1B8fWx4DhjU55ZxzDAJg1tLCyWr583i7K7LAqJtiEYOCwkWZHoXTTxlxB51B_TTnVPhAG6aD--m7Bvnw7gSdj-365CyA_dTFdG_fTU1QqiK2slc8oq9dTw9RVittT1A-GSTE_tSs5l8XRtg_QxcCAV1aw57ONHwcB9sp"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">Organic Certified</span>
+</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-headline font-bold mb-1">Oak Ridge Farm</h4>
+<p class="text-on-surface-variant font-medium mb-4">The Miller Family • 12 miles away</p>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Specializing in over 40 varieties of heirloom roots and stone fruits using regenerative practices since 1982.</p>
+<div class="flex gap-2">
+<span class="bg-surface-container-highest px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-tighter">Roots</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-tighter">Stone Fruit</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-tighter">No-Till</span>
+</div>
+</div>
+</div>
+<!-- Farmer Card 2 -->
+<div class="bg-surface-container rounded-3xl overflow-hidden editorial-shadow group">
+<div class="h-72 relative">
+<img alt="Green Valley Dairy" class="w-full h-full object-cover" data-alt="rustic aesthetic photo of fresh raw milk in glass bottles and artisan cheeses on a wooden barn shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC20ZFgbmL60XpOqEvhVqzPtQkrvQSPMJy74mYP_h0wy2TOf2crhNr97ojdLPTCLDveRqcKfbdKdhP5LjWb2bB88RG1kzlNQk-zl7Oc9vZcH8awTEWCjqeK5nB1HnBMf03qqCfZvVcg6Atrj6sej1pERP1R-s8-L2U1DUpHBw-lO2ChVoLxss3IshVRBFGWnI_lkPrhnttylYLpKKf-UFBl054apg8HhpdOiSGakP6qQustz6Tp_D8kk41gthqKLqf_MH8Y1EhjRYhh"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">Grass Fed</span>
+</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-headline font-bold mb-1">Green Valley Dairy</h4>
+<p class="text-on-surface-variant font-medium mb-4">Marcus Chen • 24 miles away</p>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">A-grade raw milk and hand-crafted artisanal cheeses from a small herd of pasture-raised Jersey cows.</p>
+<div class="flex gap-2">
+<span class="bg-surface-container-highest px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-tighter">Dairy</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-tighter">Cheese</span>
+</div>
+</div>
+</div>
+<!-- Farmer Card 3 -->
+<div class="bg-surface-container rounded-3xl overflow-hidden editorial-shadow group">
+<div class="h-72 relative">
+<img alt="The Apiary" class="w-full h-full object-cover" data-alt="golden honey dripping from a honeycomb in warm natural sunlight with bees in soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTen6SOPyJ6LAv1XsL5fCyb9qPprm_5iaOqYzIk7FPgz6q5zEcMcjQYqimAelWHBBsgYk7BDDx8boZfkTLu_9Vu_dChIrZV0m3fojk3jMvfXwKCpP7UQtatFslC-v2sgamTFKkoCjSjQmodwp6YXfUu9YVS1tOaZVTnBIo03H7Dk_BtfIcKO8zOgyYX6S1y6pHQbnZe7AltQ_eBp4oNyRrjLi_IsefPCfBZ4z0aDE87QV1PLLuhMwHokJArotvko-yEhvkTUXfIm1G"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">Wild Harvest</span>
+</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-headline font-bold mb-1">Wildflower Apiary</h4>
+<p class="text-on-surface-variant font-medium mb-4">Sarah &amp; Tom Webb • 8 miles away</p>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Single-origin raw honey and beeswax products harvested from diverse local forest floral sources.</p>
+<div class="flex gap-2">
+<span class="bg-surface-container-highest px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-tighter">Honey</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-tighter">Pollen</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Join the Movement CTA -->
+<section class="py-24 px-6 md:px-24">
+<div class="bg-primary-container rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-12 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem]" data-icon="eco">eco</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-headline font-black text-on-primary-container mb-8 leading-tight">Join the Movement <br/>Towards Real Food.</h2>
+<p class="text-primary-fixed opacity-90 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
+                        Be the first to know when new seasonal crops drop and get exclusive recipes from our local farm-to-table chefs.
+                    </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-stretch max-w-lg mx-auto">
+<input class="flex-grow px-6 py-4 rounded-xl border-none bg-surface text-on-surface focus:ring-2 focus:ring-secondary focus:outline-none placeholder:text-on-surface-variant/50" placeholder="Enter your email" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-xl font-bold text-lg active:scale-95 transition-all">Join Us</button>
+</div>
+<p class="mt-6 text-primary-fixed/60 text-sm">Join over 12,000 neighbors eating closer to home.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest pt-20 pb-28 md:pb-12 px-6 md:px-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 md:col-span-1">
+<h1 class="font-headline font-black text-[#154212] text-2xl tracking-tighter mb-6">The Homestead</h1>
+<p class="text-on-surface-variant text-sm leading-relaxed">Dedicated to revitalizing local food systems and restoring the connection between land, farmer, and community.</p>
+</div>
+<div>
+<h5 class="font-headline font-bold text-on-surface mb-6">The Market</h5>
+<ul class="flex flex-col gap-4 text-on-surface-variant text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Current Harvest</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Subscription Boxes</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gift Cards</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Delivery Map</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-on-surface mb-6">Community</h5>
+<ul class="flex flex-col gap-4 text-on-surface-variant text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Become a Farmer</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Story</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Recipe Journal</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Work With Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-on-surface mb-6">Connect</h5>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[12px] text-on-surface-variant font-medium">© 2024 The Homestead Co. Rooted in integrity.</p>
+<div class="flex gap-8 text-[12px] font-bold text-on-surface-variant tracking-wider uppercase">
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+<a href="#">Ethics</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pt-3 pb-8 bg-[#fff9ee]/80 backdrop-blur-md shadow-[0_-12px_40px_rgba(29,27,21,0.06)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center bg-[#ffc329] text-[#6f5100] rounded-2xl px-6 py-2 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] font-semibold text-[11px] uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#42493e] px-6 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+<span class="font-['Inter'] font-semibold text-[11px] uppercase tracking-wider mt-1">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#42493e] px-6 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] font-semibold text-[11px] uppercase tracking-wider mt-1">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#42493e] px-6 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-semibold text-[11px] uppercase tracking-wider mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

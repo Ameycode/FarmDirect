@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Heirloom Tomatoes | The Digital Homestead</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#f9bd22",
+                    "primary-container": "#2d5a27",
+                    "secondary-container": "#ffc329",
+                    "tertiary": "#60233e",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#ffd9e4",
+                    "inverse-on-surface": "#f6f0e5",
+                    "on-tertiary-fixed": "#3b0520",
+                    "primary-fixed": "#bcf0ae",
+                    "on-secondary-fixed-variant": "#5c4300",
+                    "tertiary-container": "#7c3a55",
+                    "surface-bright": "#fff9ee",
+                    "on-secondary-fixed": "#261a00",
+                    "surface-dim": "#dfd9ce",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#002201",
+                    "outline-variant": "#c2c9bb",
+                    "outline": "#72796e",
+                    "on-primary-fixed-variant": "#23501e",
+                    "on-tertiary-fixed-variant": "#71314c",
+                    "on-surface-variant": "#42493e",
+                    "background": "#fff9ee",
+                    "surface-container-high": "#eee7dc",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f9f3e8",
+                    "surface-container": "#f3ede2",
+                    "on-surface": "#1d1b15",
+                    "surface": "#fff9ee",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e8e2d7",
+                    "inverse-primary": "#a1d494",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#6f5100",
+                    "primary-fixed-dim": "#a1d494",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#333029",
+                    "surface-variant": "#e8e2d7",
+                    "error": "#ba1a1a",
+                    "secondary": "#795900",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#ffdf9f",
+                    "surface-tint": "#3b6934",
+                    "on-primary-container": "#9dd090",
+                    "tertiary-fixed-dim": "#ffb0cc",
+                    "on-tertiary-container": "#ffaac8",
+                    "on-background": "#1d1b15",
+                    "primary": "#154212"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .tonal-shift-bg { background-color: #f9f3e8; }
+        .ambient-shadow { box-shadow: 0 12px 40px rgba(29, 27, 21, 0.06); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff9ee]/80 dark:bg-stone-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-bold text-[#154212] dark:text-emerald-500 tracking-tight" href="#">The Digital Homestead</a>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+<a class="text-[#154212] dark:text-emerald-400 font-bold border-b-2 border-[#154212] pb-1" href="#">Marketplace</a>
+<a class="text-[#42493e] dark:text-stone-400 font-medium hover:text-[#154212] dark:hover:text-emerald-300 transition-colors" href="#">Our Farmers</a>
+<a class="text-[#42493e] dark:text-stone-400 font-medium hover:text-[#154212] dark:hover:text-emerald-300 transition-colors" href="#">Seasonal Journal</a>
+<a class="text-[#42493e] dark:text-stone-400 font-medium hover:text-[#154212] dark:hover:text-emerald-300 transition-colors" href="#">Wholesale</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="flex items-center text-[#42493e] hover:text-[#154212] transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+</button>
+<button class="flex items-center text-[#42493e] hover:text-[#154212] transition-colors">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 max-w-screen-2xl mx-auto px-8">
+<!-- Product Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 py-12">
+<!-- Image Gallery -->
+<div class="lg:col-span-7 space-y-4">
+<div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="vibrant organic heirloom tomatoes in diverse colors of red yellow and purple on a rustic wooden table sunlit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGBDQmKyEgHJZ-P8-gjAmH0L0YzuEIndC-6iSYpHx02xqDpsE_D8r1N7aDF5Ui8T1k2JjRw6umQ_1UrlKxIg3nd8_EvKQftQ5bjoMXME-bc9QlAOoMWUruxKpFAovIP_OjKvq5W8oByo539Jxi75w-XTkunc8LQSIRIQd3GGR8Cnhs0TidipOvs9Uz6y7-_26Q6jfDwvN6PMLu1WiH4eDZlsaHsmeZvSOAEA7Both745Qpf_dvZH5g_VytML7tQnAzJj12zsPnxb_n"/>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-primary">
+<img class="w-full h-full object-cover" data-alt="close up of multi colored sliced heirloom tomatoes showing juicy interior and seeds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUyAaFW0ZRC-RcNUuMcRzUL9IqhPiu54KvzIgtpry8h-DIzT5xn2xGw_9pU-Af18wKpQKenIly-XanObkoyHYlXMMlbAgt7IAQIj-25cftB49L7fSEiCQvS_3L8THDWIjCxsuhfNdFU9_d9q3fKhBJuVzIBchQ3uN3e858UK-yH18zF2FKw6V4l6CfKkbhF-qH2N_uX2-TVGxtl0SBznyHnjlDBRMn9WRkQUlHwyqOQAeZgFacVvQDOwHKCLMUwWJKOWnU0CaDgY3N"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="basket of fresh garden tomatoes of various shapes and sizes in warm sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3TL3akj_T5GoX5RXVAXzIn8neq_6JfChCdz1fNjjP2JZqxwz4Ay7Z1HWVWWQd3jobY9I7j3dFe3h0eugLwX7XmDxTpXfxhIBA6CEDanyO5xbjIlvjc9bQYiTXqPOCURFkBuhZdMj9IxGIvN2cCGyOoBQBmQ41eNlNlSd2bTGVq1H-Ef_fhMn7yXYCMx3-y8U0f9zx7ZE_lTeUYIU81N0I3O1og-oyV2_8srYMZXXOS3AteqvLisTMhgHYFMyc55kJ2DP_sW48_-No"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="hands holding a cluster of organic red tomatoes still on the vine in a greenhouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRkK-E1O2M_WriP1Pd0F7SdBDbXyOVdqadvGG7gxIxcZt99D08qPepwexxOhS4qbBnitci_ELw0ytVJU6yH3bq9x37jd75HBwFDeKYlzRb_s9wpSYH6tbAhDvf9yI3o6wjyGpHtIGX3Au0_WkwwVjssza5JSAMAYWeqIGfRgfxywAnmQicRbHUlhYHYjMtRWHeVZREQWak_0g03QJcNy8Y_doFRrf405vW9KLCx3eOkw5yLhpYkSlnTNccYwTOGSDs53p9px8-zLQK"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="rustic wooden crate filled with heirloom tomatoes of various colors at a farmers market" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6v33YmPKJ7-dp-MOgwaRfuAhdVs0tCg7Hg0m6oS7skFibfFKLNdW_US6efXtJAV-PLqkGOlRlz3kIQjXfYcz0eB2EI4DT89u2sk9aJMaeShAJXmBgIS_aAmLEtBh4A3ZKdLE5rOmx162AiQuvo1Sn_-s6xcwxFwGBFrS7Tmqwp0YnI8NVbp2y8-E6M62OpIgKlxeW4vjm128k4fw1zd5WBQGf6ISoABQWKAGRwCS47GZDCDtLlEBu_iSFxTYKEZHnICmNxfkF8g8w"/>
+</button>
+</div>
+</div>
+<!-- Product Info -->
+<div class="lg:col-span-5 flex flex-col justify-center space-y-8">
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container text-xs font-bold rounded-full uppercase tracking-widest">Organic Certified</span>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-xs font-medium rounded-full uppercase tracking-widest">Local Harvest</span>
+</div>
+<h1 class="text-5xl font-black text-on-surface leading-tight tracking-tight">Heirloom Tomatoes</h1>
+<p class="text-3xl font-medium text-primary">$4.50/lb</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl space-y-6 ambient-shadow">
+<div class="flex flex-col gap-4">
+<label class="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Select Quantity</label>
+<div class="flex items-center gap-4">
+<div class="flex items-center bg-surface-container-highest rounded-full px-4 py-2 border-none">
+<button class="w-8 h-8 flex items-center justify-center text-primary hover:bg-surface-dim rounded-full transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="mx-6 font-bold text-lg min-w-[1ch] text-center">2</span>
+<button class="w-8 h-8 flex items-center justify-center text-primary hover:bg-surface-dim rounded-full transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<span class="text-on-surface-variant text-sm font-medium italic">approx. 1.2 lbs</span>
+</div>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary-container transition-all scale-95 hover:scale-100 duration-150">
+<span class="material-symbols-outlined">shopping_basket</span>
+                        Add to Cart
+                    </button>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl border-none bg-surface-container-highest/50">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="friendly older male farmer wearing a straw hat and denim overalls smiling at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAufohbcMBbpfHHhSx_PvTHsIklfescsDhOxI9vHp3RpnuE0I8r-ti6vVvRux70Sb9mbnOm_fZkAXc-LGTDNrXfsK1OgyGSqUeJ5JrnDtCk-Dy4n547rePBf9oPRo-Oz7L0BW5g3E1FQDWJuLm-rwXQf7w_N81SkpwtYLIaVS6ZVUxkkCXOT68KXtxcXPSgDJ4N1PK_w7tdVS5BEk1PkOQ1nd_hYl1Hy-YX55ZIT0I_gmHKhqgLL66dN0acHsEcokJgPvhB4g0aoKYW"/>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Oak Ridge Orchards</p>
+<p class="text-xs text-on-surface-variant">Harvested 12 miles away in Sonoma Valley</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Description & Nutrition Bento -->
+<section class="py-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2 space-y-6">
+<h2 class="text-3xl font-bold text-on-surface">The Story of the Harvest</h2>
+<div class="prose prose-stone max-w-none text-on-surface-variant leading-relaxed space-y-4">
+<p class="text-lg">Grown from seeds passed down through five generations of the Miller family, these Heirloom Tomatoes are the crown jewel of Oak Ridge Orchards. Unlike commercial varieties, these fruits are bred for soul-stirring flavor rather than shelf stability. Each tomato is a kaleidoscope of deep reds, vibrant golds, and sunset purples.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+<div class="p-4 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary mb-2">water_drop</span>
+<h4 class="font-bold text-on-surface mb-1">Flavor Profile</h4>
+<p class="text-sm">A perfect balance of bright acidity, honey-like sweetness, and a deep earthy finish.</p>
+</div>
+<div class="p-4 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary mb-2">skillet</span>
+<h4 class="font-bold text-on-surface mb-1">Best Uses</h4>
+<p class="text-sm">Best served raw with flaked sea salt, high-quality olive oil, and fresh basil.</p>
+</div>
+<div class="p-4 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary mb-2">calendar_month</span>
+<h4 class="font-bold text-on-surface mb-1">Seasonality</h4>
+<p class="text-sm">Peak harvest from July through September. Picked daily at dawn for maximum freshness.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-[2rem] ambient-shadow">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">nutrition</span>
+                    Nutritional Information
+                </h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Calories (per 100g)</span>
+<span class="font-bold text-on-surface">18 kcal</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Vitamin C</span>
+<span class="font-bold text-on-surface">21% DV</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Fiber</span>
+<span class="font-bold text-on-surface">1.2g</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Lycopene</span>
+<span class="font-bold text-on-surface">2573 µg</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Potassium</span>
+<span class="font-bold text-on-surface">237mg</span>
+</div>
+<p class="text-[10px] text-on-surface-variant mt-4 italic leading-tight">Values are approximate based on organic heirloom varieties grown in rich volcanic soil.</p>
+</div>
+</div>
+</section>
+<!-- Farmer & Origin Details -->
+<section class="py-16 rounded-[2.5rem] bg-primary overflow-hidden relative">
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="vast green rolling hills of a productive farm at sunrise with golden light and mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnD_V5R74aQeFbvSopz7bM-dVa4KqD_vsG2RiTtnx2xMIC7tFDgHdSdUbeRQkfDnhM9nAOBBo7tkIW0BdBSKb0THDOd9WTLzXjT-_YTPYWp0_2dttH-fNZ0iTZkrpRvJckFUvPdlnV30Ujr9Si1rfUoxvxi6uKL3WSQcNnqgUgszR_4mP-3vJZEuwejLmzXJ3r4TJY4XnrwXjysy0beA1hFb54AVXwm8P0XnGcCY97theAUew0R_DGTCr5qeIK9EtndvfT4QT_3H0g"/>
+</div>
+<div class="relative z-10 px-12 py-4 flex flex-col md:flex-row items-center gap-12 text-on-primary">
+<div class="w-64 h-64 rounded-2xl overflow-hidden shrink-0 ambient-shadow border-4 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="portrait of a smiling farmer in his field holding a crate of fresh vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjKPqOHe6dIidMn3a_9D_U2XRtnSqWTph-150orwGxWl3bufCdUNdrZvzUhTEuEbe6c2BTbJaHA2cOdKiDnZUITuwTph0b0BtyQvm44f45UUsXmcptPR7znUY94fnnfJ668CA2oN8xUoO6DUwFsUo9-ADjakl9aRWiXk8s8bGwAZvxcmth4KG7S1KOnPRYGmFcie0_iiXbyUQ7z6h6aJO6yG8vXy1sfdulGT2RHa-duDNfmMJDP8JmzFJdOQGXu_VlXWhNH3712TTY"/>
+</div>
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 bg-on-primary/10 px-4 py-1 rounded-full">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="text-sm font-bold tracking-widest uppercase">12 Miles Away</span>
+</div>
+<h2 class="text-4xl font-black">Meet Farmer Silas</h2>
+<p class="text-lg text-primary-fixed leading-relaxed max-w-2xl">"At Oak Ridge, we don't just grow food; we steward the land. Every heirloom tomato is hand-picked at the precise moment of ripeness. We use zero synthetic pesticides, relying on natural beneficial insects and our own compost blends to nourish the soil."</p>
+<div class="flex gap-4">
+<span class="bg-secondary text-on-secondary px-6 py-2 rounded-full font-bold text-sm">Oak Ridge Orchards</span>
+<span class="bg-tertiary-container text-on-tertiary-container px-6 py-2 rounded-full font-bold text-sm">Organic Certified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="py-20">
+<div class="flex justify-between items-end mb-12">
+<div class="space-y-2">
+<h2 class="text-4xl font-bold text-on-surface">Community Praise</h2>
+<div class="flex items-center gap-2 text-secondary">
+<div class="flex">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-bold text-on-surface">4.8 (124 reviews)</span>
+</div>
+</div>
+<button class="px-8 py-3 bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-surface-dim transition-all">Write a Review</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-surface-container-low p-8 rounded-2xl space-y-4 ambient-shadow">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-bold text-on-surface">Elena G.</p>
+<p class="text-xs text-on-surface-variant">Verified Buyer • 2 days ago</p>
+</div>
+<div class="flex text-secondary scale-75 origin-right">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-on-surface-variant italic leading-relaxed">"These are the most incredible tomatoes I've ever tasted outside of Italy. The sweetness is unreal. I used them for a simple Caprese salad and my guests were blown away."</p>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low p-8 rounded-2xl space-y-4 ambient-shadow">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-bold text-on-surface">Marcus Thorne</p>
+<p class="text-xs text-on-surface-variant">Verified Buyer • 1 week ago</p>
+</div>
+<div class="flex text-secondary scale-75 origin-right">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+</div>
+<p class="text-on-surface-variant italic leading-relaxed">"Great flavor profile. Some of the tomatoes were a bit small this time around, but the taste more than makes up for it. Happy to support a local farm only 12 miles away!"</p>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-low p-8 rounded-2xl space-y-4 ambient-shadow">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-bold text-on-surface">Sarah J.</p>
+<p class="text-xs text-on-surface-variant">Verified Buyer • 3 weeks ago</p>
+</div>
+<div class="flex text-secondary scale-75 origin-right">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-on-surface-variant italic leading-relaxed">"The colors are just gorgeous. They looked so beautiful on my counter I almost didn't want to eat them. Almost. Highly recommend the darker purple ones!"</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2rem] mt-20 bg-[#f9f3e8] dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-12 py-16 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-black text-[#1d1b15] dark:text-stone-100">The Digital Homestead</div>
+<p class="font-['Inter'] text-sm text-[#42493e] dark:text-stone-400 max-w-md opacity-80">© 2024 The Digital Homestead. Rooted in tradition, grown for the future.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 font-['Inter'] text-sm">
+<a class="text-[#42493e] dark:text-stone-400 hover:text-[#154212] dark:hover:text-emerald-300 transition-all opacity-80 hover:opacity-100" href="#">Sustainability Report</a>
+<a class="text-[#42493e] dark:text-stone-400 hover:text-[#154212] dark:hover:text-emerald-300 transition-all opacity-80 hover:opacity-100" href="#">Shipping Policy</a>
+</div>
+<div class="flex flex-col gap-4 font-['Inter'] text-sm">
+<a class="text-[#42493e] dark:text-stone-400 hover:text-[#154212] dark:hover:text-emerald-300 transition-all opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="text-[#42493e] dark:text-stone-400 hover:text-[#154212] dark:hover:text-emerald-300 transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4 font-['Inter'] text-sm">
+<a class="text-[#154212] dark:text-emerald-400 underline hover:text-[#154212] transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

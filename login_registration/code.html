@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fff9ee",
+                        "tertiary-fixed": "#ffd9e4",
+                        "primary-fixed-dim": "#a1d494",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb0cc",
+                        "on-primary-fixed": "#002201",
+                        "on-primary-container": "#9dd090",
+                        "on-background": "#1d1b15",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dfd9ce",
+                        "secondary": "#795900",
+                        "surface-variant": "#e8e2d7",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "on-secondary-fixed": "#261a00",
+                        "surface-container": "#f3ede2",
+                        "background": "#fff9ee",
+                        "surface-container-high": "#eee7dc",
+                        "on-surface-variant": "#42493e",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#a1d494",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e8e2d7",
+                        "on-tertiary-container": "#ffaac8",
+                        "surface-bright": "#fff9ee",
+                        "outline": "#72796e",
+                        "surface-tint": "#3b6934",
+                        "secondary-fixed-dim": "#f9bd22",
+                        "outline-variant": "#c2c9bb",
+                        "inverse-surface": "#333029",
+                        "secondary-fixed": "#ffdf9f",
+                        "on-error": "#ffffff",
+                        "primary-container": "#2d5a27",
+                        "on-tertiary-fixed-variant": "#71314c",
+                        "on-primary-fixed-variant": "#23501e",
+                        "tertiary-container": "#7c3a55",
+                        "primary-fixed": "#bcf0ae",
+                        "surface-container-low": "#f9f3e8",
+                        "on-secondary-container": "#6f5100",
+                        "inverse-on-surface": "#f6f0e5",
+                        "primary": "#154212",
+                        "secondary-container": "#ffc329",
+                        "on-tertiary-fixed": "#3b0520",
+                        "tertiary": "#60233e",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1d1b15"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 249, 238, 0.8);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased min-h-screen flex flex-col">
+<main class="flex-grow flex items-stretch min-h-screen">
+<!-- Left Side: Visual Narrative -->
+<div class="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-primary">
+<img alt="Sun-drenched agricultural landscape with rolling hills and a modern farmhouse at dawn" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60" data-alt="cinematic shot of sun-drenched agricultural landscape with rolling green hills and a modern farmhouse at golden hour dawn light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7ugBw9ITSSBoUGJ2Mhp7wauTjalwyYRB5VIeyy13WIVRnjq65DV-pOzdnNFAz097jlLfR0YciuDcpIuP56zvVRzqT3j5uyzc_tH0BC_ZI6rOTLFNZSZPBn_eh1NjwKsfp73drUcuqrC6Gy-gUIklUJE2Cg0xwSz3OA_9yXiX-LbOjraf9AzPhyKj41119rudb0rBYsdnvi33vkT4XfmTboxasGQfDEXrt5jbkNxADBojs1kQUoZA0oZh4MYJwIEPFaqnAQgoM4PCU"/>
+<div class="relative z-10 p-16 flex flex-col justify-between h-full">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-surface text-4xl" data-icon="potted_plant">potted_plant</span>
+<span class="font-headline font-extrabold text-3xl tracking-tight text-surface">Harvest Hearth</span>
+</div>
+<div class="max-w-md">
+<h1 class="font-headline text-5xl font-extrabold leading-tight text-surface mb-6">
+                        Reconnect with the rhythm of the soil.
+                    </h1>
+<p class="text-xl text-surface/90 leading-relaxed font-medium">
+                        Join our community of growers and producers. Pure provenance, delivered from the field to your doorstep.
+                    </p>
+</div>
+<div class="flex items-center gap-8">
+<div class="flex flex-col">
+<span class="text-3xl font-bold text-secondary-container">12k+</span>
+<span class="text-sm text-surface/80 uppercase tracking-widest font-semibold">Local Producers</span>
+</div>
+<div class="w-px h-10 bg-surface/20"></div>
+<div class="flex flex-col">
+<span class="text-3xl font-bold text-secondary-container">100%</span>
+<span class="text-sm text-surface/80 uppercase tracking-widest font-semibold">Traceable Source</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Auth Forms -->
+<div class="w-full lg:w-1/2 flex flex-col bg-surface overflow-y-auto">
+<!-- Language Selector Sticky Header -->
+<div class="p-8 flex justify-end">
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-outline text-sm" data-icon="language">language</span>
+<select class="bg-transparent border-none focus:ring-0 text-sm font-semibold text-on-surface-variant cursor-pointer appearance-none pr-4">
+<option value="en">English</option>
+<option value="hi">हिन्दी (Hindi)</option>
+<option value="mr">मराठी (Marathi)</option>
+</select>
+<span class="material-symbols-outlined text-outline text-xs" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<div class="flex-grow flex items-center justify-center p-8">
+<div class="max-w-md w-full">
+<!-- Brand Anchor for Mobile -->
+<div class="lg:hidden flex items-center space-x-2 mb-12">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="potted_plant">potted_plant</span>
+<span class="font-headline font-extrabold text-2xl tracking-tight text-primary">Harvest Hearth</span>
+</div>
+<!-- Toggle Auth State -->
+<div class="mb-10 inline-flex p-1 bg-surface-container-low rounded-xl">
+<button class="px-6 py-2.5 rounded-lg bg-surface-container-lowest shadow-sm text-primary font-bold text-sm transition-all">Sign In</button>
+<button class="px-6 py-2.5 rounded-lg text-on-surface-variant font-medium text-sm hover:text-primary transition-all">Create Account</button>
+</div>
+<div class="space-y-2 mb-8">
+<h2 class="font-headline text-3xl font-bold text-on-surface">Welcome Back</h2>
+<p class="text-on-surface-variant">Enter your credentials to access your homestead dashboard.</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-1.5">
+<label class="text-xs font-bold uppercase tracking-wider text-outline ml-1">Email or Phone</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors" data-icon="alternate_email">alternate_email</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-highest rounded-xl border-none focus:ring-2 focus:ring-primary/40 text-on-surface font-medium transition-all placeholder:text-outline/60" placeholder="name@homestead.com" type="text"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center px-1">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Password</label>
+<a class="text-xs font-bold text-primary hover:underline" href="#">Forgot?</a>
+</div>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors" data-icon="lock">lock</span>
+<input class="w-full pl-12 pr-12 py-4 bg-surface-container-highest rounded-xl border-none focus:ring-2 focus:ring-primary/40 text-on-surface font-medium transition-all placeholder:text-outline/60" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-outline hover:text-primary" type="button">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex items-center space-x-3 px-1">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary focus:ring-offset-surface" id="remember" type="checkbox"/>
+<label class="text-sm font-medium text-on-surface-variant cursor-pointer" for="remember">Remember this device</label>
+</div>
+<button class="w-full py-4 bg-primary text-surface font-bold text-lg rounded-xl shadow-lg shadow-primary/20 hover:bg-primary-container active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="submit">
+                            Access Your Hearth
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+<div class="mt-10">
+<div class="relative flex items-center py-4">
+<div class="flex-grow border-t border-surface-container-highest"></div>
+<span class="flex-shrink mx-4 text-xs font-bold uppercase tracking-widest text-outline">Social Harvest</span>
+<div class="flex-grow border-t border-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-6">
+<button class="flex items-center justify-center gap-3 py-3 px-4 bg-surface-container-low rounded-xl border-none hover:bg-surface-container-high transition-colors text-sm font-semibold text-on-surface">
+<img alt="Google" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgPghhHBSIF_BZPRpRZ2WPGvtvDqh65d7V48W-svfYL2usmrJZviS9Z_xC4G3apfItq3gNf8Qyv_ESdkTGNrJcgNHT_AaoQycGY6enRoE9yaD-_Z1F4epScdi3la4ZNyul4XTnj16U80DQyWSgzobZVd112zm5bsZTVyBfldJ5YHT7xU_4of26Y2KygOWhlnIJ4owsU6s40FbO44y8lBKKBqLh_YkM11Ua8SqlIi_r4ntbzxQwEp2WShyRKjgFhHsElX5qqRGSkkhY"/>
+                                Google
+                            </button>
+<button class="flex items-center justify-center gap-3 py-3 px-4 bg-surface-container-low rounded-xl border-none hover:bg-surface-container-high transition-colors text-sm font-semibold text-on-surface">
+<span class="material-symbols-outlined text-blue-600" data-icon="facebook" style="font-variation-settings: 'FILL' 1;">social_leaderboard</span>
+                                Facebook
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Hook -->
+<footer class="p-8 mt-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-outline">
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Help</a>
+</div>
+<div class="text-outline/60">
+                    © 2024 Harvest Hearth Marketplace
+                </div>
+</footer>
+</div>
+</main>
+<!-- Decorative Element: Organic Shape -->
+<div class="fixed -bottom-24 -left-24 w-96 h-96 bg-primary-fixed-dim/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="fixed top-1/4 -right-12 w-64 h-64 bg-secondary-fixed/10 rounded-full blur-2xl pointer-events-none"></div>
+</body></html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#002201",
+                    "surface": "#fff9ee",
+                    "surface-container": "#f3ede2",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e8e2d7",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#3b6934",
+                    "primary-fixed-dim": "#a1d494",
+                    "surface-dim": "#dfd9ce",
+                    "inverse-primary": "#a1d494",
+                    "inverse-surface": "#333029",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#795900",
+                    "on-primary-container": "#9dd090",
+                    "primary-container": "#2d5a27",
+                    "tertiary-container": "#7c3a55",
+                    "on-surface": "#1d1b15",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eee7dc",
+                    "secondary-fixed": "#ffdf9f",
+                    "on-surface-variant": "#42493e",
+                    "on-primary-fixed-variant": "#23501e",
+                    "tertiary-fixed-dim": "#ffb0cc",
+                    "secondary-container": "#ffc329",
+                    "primary": "#154212",
+                    "outline-variant": "#c2c9bb",
+                    "on-tertiary-container": "#ffaac8",
+                    "on-secondary-container": "#6f5100",
+                    "on-tertiary-fixed-variant": "#71314c",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#f9bd22",
+                    "surface-bright": "#fff9ee",
+                    "on-secondary-fixed": "#261a00",
+                    "background": "#fff9ee",
+                    "inverse-on-surface": "#f6f0e5",
+                    "surface-variant": "#e8e2d7",
+                    "primary-fixed": "#bcf0ae",
+                    "surface-container-low": "#f9f3e8",
+                    "on-secondary-fixed-variant": "#5c4300",
+                    "tertiary": "#60233e",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#ffd9e4",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1d1b15",
+                    "outline": "#72796e",
+                    "on-tertiary-fixed": "#3b0520"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff9ee;
+            color: #1d1b15;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .brand-font {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-[#fff9ee] dark:bg-stone-950 flex justify-between items-center px-6 py-4 w-full z-50 shadow-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#154212] dark:text-[#4ade80]">location_on</span>
+<span class="font-['Plus_Jakarta_Sans'] font-black text-[#154212] dark:text-white text-xl tracking-tighter">The Homestead</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#154212] dark:text-[#4ade80]" href="#">Home</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#42493e] dark:text-stone-400 hover:bg-[#e8e2d7]/50 transition-colors px-3 py-1 rounded-lg" href="#">Orders</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#42493e] dark:text-stone-400 hover:bg-[#e8e2d7]/50 transition-colors px-3 py-1 rounded-lg" href="#">Dashboard</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#42493e] dark:text-stone-400 hover:bg-[#e8e2d7]/50 transition-colors px-3 py-1 rounded-lg" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-[#e8e2d7]/50 transition-colors">
+<span class="material-symbols-outlined text-[#154212] dark:text-[#4ade80]">search</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-8 pb-32">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 mb-8 text-on-surface-variant text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#">Marketplace</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Organic Vegetables</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-on-surface">Heirloom Honeycrisp Apples</span>
+</nav>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Side: Gallery -->
+<div class="lg:col-span-7 space-y-6">
+<div class="aspect-[4/3] rounded-3xl overflow-hidden bg-surface-container-low shadow-sm">
+<img alt="Heirloom Honeycrisp Apples" class="w-full h-full object-cover" data-alt="Close-up of vibrant red and yellow heirloom apples in a rustic wooden crate, soft natural morning sunlight, high detail textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMRQ_ItuR2-n42eSBVhlINF4ujp5RwRQEaP51GzJ59CF-sT1DzPHDNN1UQXGnkYXVV9oTGoUbFZwVV-SE_B0i0zMs7XuJd8QzZtTOagn29-ULiB6Gu4-O1vJLtLHnY0DUL5rR7Gj-7obA8sh0Hq-qyMenCzfbanLb_9k0MYUn7jbqn2rZEroGeRGZMTIYoA3ktQJmmHEN9e9yYK0VZRQYZ_U2Xve2zO2unoBjGu7n0R0MIjiPBXdIxGmbDg9hdn0c_OUkg5gKaX0TD"/>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-high cursor-pointer ring-2 ring-primary ring-offset-2 ring-offset-surface">
+<img alt="Detail 1" class="w-full h-full object-cover" data-alt="Close-up of a single honeycrisp apple with water droplets on the skin, soft focus orchard background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsbHFZxtBEy9KhTfq02E4ZIrhaAJYi4G0mEPWWTNOwqe6gLbFOjSXhP625bxn9aDFT7ntCAIvmHfPkw84mJxE4qgp8-NJqLlIFzuH5-SK7FZzWXv8jRRm7y9rOgwGm_Kmyv9VX6N8BYnHCJzvPB0kP3UcwAb1ooh_ayWpTTjsdmiIKLdfGR9ObRfQ8J0CW6dr6IhwLNcgJZZgk6YviL14MuRMpKkTEXPEiT7rRGn-Vyk_XIRGMCySWfrO_dRWrsPlFtFSw5xmU5Oua"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-high cursor-pointer hover:opacity-80 transition-opacity">
+<img alt="Detail 2" class="w-full h-full object-cover" data-alt="Wide shot of a sun-drenched apple orchard rows with trees full of ripe fruit, blue sky background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1FrMwIJHk_-BDk7FktjMK3oz0ahzKD6Us_AUPrwLbmWv9rqEHKFzK1PXBDskf1kLtUHatQAbRMxEFr2617hazEWF5QF03jvOhfDgz5z1zkLFjx6DLTelYBc27cRFli829v6K4S8jp-C1e-gxvyawoLGIy4bXT0Oi2cbk9q0fT0NfF3oZnijJkhiH83w0KPMXQq3C8KSuFxxxA0MP3_D6vCoWRAe9yD97TnLOhsWX2bGhp_28WzAoJmtlwTpaOkbmF_pKvMMV-EF4x"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-high cursor-pointer hover:opacity-80 transition-opacity">
+<img alt="Detail 3" class="w-full h-full object-cover" data-alt="Farmers hands carefully picking an apple from a tree branch, organic farming aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQfQBcfCpdTGax-56aSASdSmi6aSUVIVL2RqXWdHZFzyTIYk8n6XmgIUnpBXCftWFbrb827Y7oc6akZ53ylXTvkmpPFttJOb19_i3TAwN3E460gA7H4ml-afNXq_eM0fMHGXQSvzG3vjVyfAkhW5JYjXY6jW0SD_UnBK8xruhAZCxSJqQ-llNykIEr5M6EGLNhgIUHDMFW1dupu5d0UoSRg4g5dzMw6KEMsI-Biy4RY53i2VNlVTp64_S_y8gASARyFKuR6483Al9-"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container-high cursor-pointer relative hover:opacity-80 transition-opacity">
+<img alt="Detail 4" class="w-full h-full object-cover" data-alt="Apples being washed in a wooden basin with clean splashing water, fresh agricultural look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVXmzBFkBiTBgp-WDU5rKS168n_u4xaZTjgd2qf_M64OWBmy57LV2cNXNw9yH_HishIAL-gpcQB9zFX8uK3JTV58Oyjr43_ZJWXzo9jicOOPq11k2QbL8LpJFYadWWfx2df7MN8A3h-f3zM4Nusl12bJwDHpMYtHw8KJ-awd0mZVwO-u036TPz6RST2URa1V7ORzPM5hWA6mnr3l-pSMGxY3RxJexy39Rpe2sOixdbPXZfmTbI8_YfonJmlmbqyOaSeSin7g5VDysK"/>
+</div>
+</div>
+</div>
+<!-- Right Side: Details -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="space-y-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-bold uppercase tracking-wider">Certified Organic</span>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant rounded-full text-xs font-bold uppercase tracking-wider">Direct from Farm</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-black text-on-surface leading-tight tracking-tighter">Heirloom Honeycrisp Apples</h1>
+<p class="text-lg text-on-surface-variant font-medium leading-relaxed">
+                        Crisp, juicy, and exceptionally sweet with a subtle tart finish. Harvested at the peak of ripeness from our north-facing slopes.
+                    </p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-3xl space-y-6">
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-black text-primary">$4.50</span>
+<span class="text-on-surface-variant font-medium">/ per kg</span>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-1">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Harvest Date</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">calendar_today</span>
+<span class="text-on-surface font-semibold">Oct 12, 2023</span>
+</div>
+</div>
+<div class="space-y-1">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Availability</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">inventory_2</span>
+<span class="text-on-surface font-semibold">450 kg left</span>
+</div>
+</div>
+</div>
+<div class="space-y-4 pt-4">
+<button class="w-full bg-secondary-container text-on-secondary-container py-4 px-8 rounded-xl font-bold text-lg flex items-center justify-center gap-3 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_basket</span>
+                            Add to Cart
+                        </button>
+<button class="w-full bg-primary text-on-primary py-4 px-8 rounded-xl font-bold text-lg flex items-center justify-center gap-3 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">call</span>
+                            Negotiate via Call
+                        </button>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-surface-container-highest/30 rounded-2xl">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary-container">
+<img alt="Farmer" class="w-full h-full object-cover" data-alt="Portrait of a friendly elderly farmer with sun-weathered skin and a straw hat, smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmIPK--FZbdOPZqqRX__iSpRQXtDDi4dx5oWGQ92elC3aHywMMV_X9mLpxykRHBkN81Ah-poc_gh2qheNlrBke7ksF3NFQG8KXj2nj9hFIS7Vhoca00sK0L4QFGclfhYPgUYfu0d-gCeh3P121ulg5Akf-yEZrL6bsnRlm1-Ty7tOF3DFB8iq3ZHoH58cgFtmL4aVwMztkjnJFHC6CN3ipc56J36zYq4NNHkroJKbicVP8ZENXrVaDULtc1jAcrB5pEjMOmv9at9dm"/>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Silas Miller</p>
+<p class="text-xs text-on-surface-variant font-medium">Miller Family Orchards • 12km away</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Below the Fold: Farmer Story -->
+<section class="mt-24 space-y-16">
+<div class="h-px bg-outline-variant/20 w-full"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-6 space-y-8">
+<div class="space-y-4">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">The Hands that Grow</span>
+<h2 class="text-4xl font-black text-on-surface tracking-tighter">Generations of Stewardship at Miller Orchards</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                            Since 1924, the Miller family has tended to these hills. We believe that soil health is the foundation of flavor. By utilizing regenerative practices and companion planting, we ensure that every apple doesn't just taste better, but leaves the earth better than we found it.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-low p-6 rounded-2xl space-y-2">
+<span class="material-symbols-outlined text-primary text-3xl">psychiatry</span>
+<h3 class="font-bold text-on-surface">No Pesticides</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">We use natural neem oils and predatory insects for pest management.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl space-y-2">
+<span class="material-symbols-outlined text-primary text-3xl">water_drop</span>
+<h3 class="font-bold text-on-surface">Rainwater Fed</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Our advanced gravity-fed irrigation system uses 100% captured rainwater.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="relative">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
+<img alt="Orchard" class="w-full h-full object-cover" data-alt="Wide panoramic view of rolling green hills with neatly planted fruit trees under a soft overcast sky, idyllic countryside" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaHjmJy6NhnZjsPvCV-tV1PPIZ8BiSuxk4loE-q3aIWbuur499A3uFO64edr2sn0S7-fGxsvE-hOHIn8O3S46l6FZfnCOO8J-rWXmn-MNVdAWMCV-wYUN1LeMiPLb6DCbmCxOn-BHC0xBoYC6WNy2J_T3OCEukpnv__mvyUG2gHf6UPv1GGOpkDzI5YTeaCxb7gL0UTxCYAzuOnVY-MFoGlpWsOUpBQokj57zR3TQl6I76cbTACCkPIxgNf_g7LjWgjAERJytqzfPI"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-4 max-w-xs">
+<div class="bg-primary text-on-primary p-3 rounded-xl">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<p class="text-sm font-bold text-on-surface leading-tight">Soil Association Certified since 1998</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Location Map Section -->
+<div class="rounded-3xl overflow-hidden bg-surface-container-low relative h-[400px]">
+<div class="absolute inset-0 z-0">
+<img alt="Map" class="w-full h-full object-cover opacity-60 grayscale brightness-110" data-alt="Stylized map showing terrain and rural roads of a fruit-growing valley, minimalist aesthetic" data-location="Okanagan Valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc8vvxG7nvQeT6Pp7SXCmKsZq0bm6VUYS13tSA5xkQyPCevfbgsgeL3SBrrdetXZTW6lBdGAZhdbJmek031dA-tUuqUq7YcXISHryM1WUb3F0DHCvjt0O2uE7L_xUYB7y9hPrms_SPHngF-u_pxOAXJjHtIqxYHgeFMNjGa8t_pqhO67uH7Y5JCBqWVzvhaSGoVNUc94sldXUb28_RtL_-d8GuKXCWKUXsEGFq5bXmjLBPjUQSXlT0K9brvPgFrjZp8tsXEvwFJmyg"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="relative">
+<div class="w-16 h-16 bg-primary/20 rounded-full animate-pulse absolute -inset-0"></div>
+<div class="bg-primary text-on-primary w-12 h-12 rounded-full flex items-center justify-center shadow-2xl relative">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-8 left-8 right-8 md:right-auto bg-surface/90 backdrop-blur-md p-6 rounded-2xl shadow-xl max-w-md border border-white/20">
+<div class="space-y-4">
+<h3 class="text-xl font-bold text-on-surface">Find us at the gate</h3>
+<p class="text-on-surface-variant text-sm font-medium">
+                            742 Miller Ridge Rd, Okanagan Valley. Farm gate sales open Monday through Saturday, 9 AM to 5 PM.
+                        </p>
+<button class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all pointer-events-auto">
+                            Get Directions <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pt-3 pb-8 bg-[#fff9ee]/80 dark:bg-stone-950/80 backdrop-blur-md rounded-t-3xl shadow-[0_-12px_40px_rgba(29,27,21,0.06)]">
+<div class="flex flex-col items-center justify-center text-[#42493e] dark:text-stone-400 px-6 py-2">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] font-semibold text-[11px] uppercase tracking-wider mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#42493e] dark:text-stone-400 px-6 py-2">
+<span class="material-symbols-outlined">shopping_basket</span>
+<span class="font-['Inter'] font-semibold text-[11px] uppercase tracking-wider mt-1">Orders</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#42493e] dark:text-stone-400 px-6 py-2">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-['Inter'] font-semibold text-[11px] uppercase tracking-wider mt-1">Dashboard</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#ffc329] text-[#6f5100] rounded-2xl px-6 py-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Inter'] font-semibold text-[11px] uppercase tracking-wider mt-1">Profile</span>
+</div>
+</nav>
+</body></html>
