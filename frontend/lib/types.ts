@@ -96,6 +96,7 @@ export interface Order {
   scheduled_at: string | null;
   items: OrderItem[];
   created_at: string;
+  updated_at: string;
 }
 
 export type NegotiationStatus = 'ACTIVE' | 'ACCEPTED' | 'REJECTED' | 'EXPIRED';
